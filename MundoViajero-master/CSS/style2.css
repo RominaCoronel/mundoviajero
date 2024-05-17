@@ -186,8 +186,6 @@ header {
     background: var(--bg-color-primary);
 }
 
-
-
 header .brand {
     display: flex;
     align-items: center;
@@ -404,12 +402,12 @@ section {
     margin-bottom: 30px;
     gap: 5rem;
     flex-wrap: wrap;
-    visibility: hidden;
 }
 
-.promos img {
+
+.promos div img {
     border-radius: 5px;
-    filter: drop-shadow(2px 2px 2px rgb(131, 131, 131));
+    filter: drop-shadow(2px 2px 2px rgb(228, 228, 228));
 }
 
 /**tarjeta*/
