@@ -13,7 +13,7 @@
     --forth-color: rgb(103, 125, 224);
     --fifth-color: rgb(159, 226, 159);
     --bg-color-primary: rgb(4, 21, 97);
-    --bg-color-primary-alpha: rgba(4, 21, 97, 0.919);
+    --bg-color-primary-alpha: rgba(4, 21, 97, 0.474);
     --black-color: rgb(30, 30, 30);
     --white-color: rgb(255, 255, 255);
     --color-links: #d8d8d8;
@@ -193,7 +193,7 @@ header {
     right: 0;
     left: 0;
     z-index: 999;
-    background: var(--bg-color-primary);
+    background: var(--bg-color-primary-alpha);
 }
 
 header .brand {
@@ -779,20 +779,20 @@ input[type="submit"]:hover {
     }
 
     header {
-        justify-content: flex-start;
+        justify-content: space-between;
         transition: all .5s ease;
 
     }
 
     header.scroll-header {
         padding: 4rem 0;
-        background: var(--bg-color-primary-alpha);
+        background: var(--bg-color-primary);
     }
 
     /**Navbar desktop**/
 
     .navbar-desktop {
-        margin-left: 1rem;
+        margin-right: 10rem;
         margin-top: .7rem;
         /* flex-shrink: 1; */
     }
