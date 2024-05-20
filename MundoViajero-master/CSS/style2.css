@@ -196,6 +196,11 @@ header {
     background: var(--bg-color-primary-alpha);
 }
 
+header.scroll-header {
+    padding: 4rem 0;
+    background: var(--bg-color-primary);
+}
+
 header .brand {
     display: flex;
     align-items: center;
