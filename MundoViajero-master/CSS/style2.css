@@ -7,7 +7,7 @@
     --main-font: "Andika", sans-serif;
     /*Colors*/
     --btn-wsp: rgb(19, 188, 19);
-    --second-color: rgb(4, 21, 97);
+    --second-color: rgb(4, 21 97);
     --second-color-alpha: rgba(4, 21, 97, 0.769);
     --third-color: rgb(255, 126, 212);
     --forth-color: rgb(103, 125, 224);
@@ -57,15 +57,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .flex-center2 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: auto;
-    height: 10px;
+    margin: 5px;
+    height: 5px;
     width: auto;
 }
-
 .no-scroll {
     overflow: hidden;
 }
@@ -186,6 +185,8 @@ header {
     background: var(--bg-color-primary);
 }
 
+
+
 header .brand {
     display: flex;
     align-items: center;
@@ -296,9 +297,8 @@ header .navbar-desktop * {
 
 /**Foto inicio**/
 .container-search {
-    margin-top: 0;
-    height: 100vh;
-    width: auto;
+    margin-top: 5px;
+    height: 1px;
     flex-direction: column;
     gap: 2rem;
     flex-wrap: wrap;
@@ -316,7 +316,7 @@ header .navbar-desktop * {
 }
 
 .principal {
-    height: 10px;
+   /* height: 10px;*/
     width: auto;
     display: flex;
     justify-content: center;
@@ -324,18 +324,19 @@ header .navbar-desktop * {
     gap: 2.5rem;
 }
 
+
 .caja {
     height: 50vh;
     width: auto;
     margin: auto;
-
+    
 }
 
 /**busqueda*/
 
 .container-search .busqueda input[type="search"] {
     border-radius: 30px;
-    height: 3.5rem;
+    /*height: 3.5rem;*/
     width: 70%;
     border: thin solid var(--forth-color);
     outline-color: var(--forth-color);
@@ -402,12 +403,12 @@ section {
     margin-bottom: 30px;
     gap: 5rem;
     flex-wrap: wrap;
+    visibility: hidden;
 }
 
-
-.promos div img {
+.promos img {
     border-radius: 5px;
-    filter: drop-shadow(2px 2px 2px rgb(228, 228, 228));
+    filter: drop-shadow(2px 2px 2px rgb(131, 131, 131));
 }
 
 /**tarjeta*/
@@ -612,14 +613,24 @@ footer .down {
 }
 
 .title-section {
-    color: var(--black-color);
+    color: var(--white-color);
     font-size: 3rem;
     text-align: center;
-    text-shadow: 1px 1px 3px #eef;
+    /*text-shadow: 1px 1px 3px #eef;*/
     font-weight: bold;
     font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
-
+.title-section2 {
+    color: rgb(4, 21, 97);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
 .accordion {
     margin: 4rem 0;
 }
