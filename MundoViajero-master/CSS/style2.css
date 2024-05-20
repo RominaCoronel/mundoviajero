@@ -50,6 +50,16 @@ body {
     background: url('../assets/background-images/bg_alt7.jpg') center/cover no-repeat fixed;
 }
 
+/*MAin*/
+main {
+    margin-top: 7.5rem;
+    flex-grow: 1;
+}
+
+section {
+    scroll-margin-top: 8.5rem;
+
+}
 
 /**my styles**/
 /*
@@ -186,7 +196,11 @@ header {
     left: 0;
     z-index: 999;
     background: var(--bg-color-primary-alpha);
+}
 
+header.scroll-header {
+    padding: 4rem 0;
+    background: var(--bg-color-primary);
 }
 
 
@@ -280,8 +294,8 @@ header i {
 
 /**Foto inicio**/
 .container-search {
-    margin-top: 0;
-    height: 100vh;
+    margin-top: 10rem;
+    height: 20vh;
     width: auto;
     flex-direction: column;
     gap: 2rem;
@@ -363,6 +377,7 @@ header i {
 }
 
 
+
 /*MAin*/
 main {
     margin-top: 7.5rem;
@@ -373,7 +388,6 @@ section {
     scroll-margin-top: 8.5rem;
 
 }
-
 
 #nacionales,
 #internacionales {
@@ -774,13 +788,13 @@ input[type="submit"]:hover {
 
     header.scroll-header {
         padding: 4rem 0;
-        background: var(--bg-color-primary-alpha);
+        background: var(--bg-color-primary);
     }
 
     /**Navbar desktop**/
 
     .navbar-desktop {
-        margin-left: 10rem;
+        margin-right: 10rem;
         margin-top: .7rem;
         /* flex-shrink: 1; */
     }
