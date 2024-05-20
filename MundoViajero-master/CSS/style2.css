@@ -7,13 +7,13 @@
     --main-font: "Andika", sans-serif;
     /*Colors*/
     --btn-wsp: rgb(19, 188, 19);
-    --second-color: rgb(4, 21 97);
+    --second-color: rgb(4, 21, 97);
     --second-color-alpha: rgba(4, 21, 97, 0.769);
     --third-color: rgb(255, 126, 212);
     --forth-color: rgb(103, 125, 224);
     --fifth-color: rgb(159, 226, 159);
     --bg-color-primary: rgb(4, 21, 97);
-    --bg-color-primary-alpha: rgba(4, 21, 97, 0.919);
+    --bg-color-primary-alpha: rgba(4, 21, 97, 0.474);
     --black-color: rgb(30, 30, 30);
     --white-color: rgb(255, 255, 255);
     --color-links: #d8d8d8;
@@ -52,17 +52,20 @@ body {
 
 
 /**my styles**/
+/*
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    height: 10px;
+    width: auto;
+}*/
 .flex-center2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px;
-    height: 5px;
+    margin: 0;
+    height: 10px;
     width: auto;
 }
 .no-scroll {
@@ -176,13 +179,14 @@ header {
     height: 7rem;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 999;
-    background: var(--bg-color-primary);
+    background: var(--bg-color-primary-alpha);
+
 }
 
 
@@ -204,9 +208,10 @@ header i {
 
 /*!disable*/
 
-header .navbar-desktop * {
-    display: none;
-    visibility: hidden;
+.navbar-desktop {
+   
+    margin-right: 10rem;
+    margin-top: .7rem;
 }
 
 /**Menu mobile*/
@@ -273,32 +278,11 @@ header .navbar-desktop * {
     text-decoration: none;
 }
 
-/* 
-.navbar-mobile .menu li:nth-child(1) a {
-    color: var(--first-color);
-}
-
-.navbar-mobile .menu li:nth-child(2) a {
-    color: var(--second-color);
-}
-
-.navbar-mobile .menu li:nth-child(3) a {
-    color: var(--forth-color);
-}
-
-.navbar-mobile .menu li:nth-child(4) a {
-    color: var(--fifth-color);
-}
-
-.navbar-mobile .menu li:nth-child(5) a {
-    color: rgb(255, 143, 242);
-} */
-
-
 /**Foto inicio**/
 .container-search {
-    margin-top: 5px;
-    height: 1px;
+    margin-top: 0;
+    height: 100vh;
+    width: auto;
     flex-direction: column;
     gap: 2rem;
     flex-wrap: wrap;
@@ -309,21 +293,21 @@ header .navbar-desktop * {
 }
 
 .container-search h2 {
-    color: var(--black-color);
-    text-shadow: 1px 1px 4px var(--color-links);
+    color: var(--white-color);
+    text-shadow: var(--text-shadow-header);
     font-size: 2.2rem;
     font-weight: bolder;
 }
 
 .principal {
-   /* height: 10px;*/
+    height: 300px;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+    margin-top: 0;
 }
-
 
 .caja {
     height: 50vh;
@@ -336,7 +320,7 @@ header .navbar-desktop * {
 
 .container-search .busqueda input[type="search"] {
     border-radius: 30px;
-    /*height: 3.5rem;*/
+    height: 3.5rem;
     width: 70%;
     border: thin solid var(--forth-color);
     outline-color: var(--forth-color);
@@ -381,7 +365,7 @@ header .navbar-desktop * {
 
 /*MAin*/
 main {
-    margin-top: 1rem;
+    margin-top: 7.5rem;
     flex-grow: 1;
 }
 
@@ -393,7 +377,7 @@ section {
 
 #nacionales,
 #internacionales {
-    margin: 3rem auto;
+    margin: 8rem auto;
 }
 
 
@@ -616,21 +600,11 @@ footer .down {
     color: var(--white-color);
     font-size: 3rem;
     text-align: center;
-    /*text-shadow: 1px 1px 3px #eef;*/
+    text-shadow: var(--text-shadow-header);
     font-weight: bold;
     font-style: italic;
-    margin-top: 50px;
-    margin-bottom: 15px;
 }
-.title-section2 {
-    color: rgb(4, 21, 97);
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    margin-top: 50px;
-    margin-bottom: 15px;
-}
+
 .accordion {
     margin: 4rem 0;
 }
@@ -793,7 +767,7 @@ input[type="submit"]:hover {
     }
 
     header {
-        justify-content: flex-start;
+        justify-content: space-between;
         transition: all .5s ease;
 
     }
@@ -806,7 +780,7 @@ input[type="submit"]:hover {
     /**Navbar desktop**/
 
     .navbar-desktop {
-        margin-left: 1rem;
+        margin-left: 10rem;
         margin-top: .7rem;
         /* flex-shrink: 1; */
     }

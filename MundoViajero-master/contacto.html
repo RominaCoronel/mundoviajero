@@ -45,8 +45,8 @@
         </button>
         <nav class="navbar-mobile flex-center">
             <ul class="menu">
-                <li><a class="nav-link-mb" href="#nacionales">Destinos Nacionales</a></li>
-                <li><a class="nav-link-mb" href="#internacionales">Destinos Internacionales</a></li>
+                <li><a class="nav-link-mb" href="destinos.html#nacionales">Destinos Nacionales</a></li>
+                <li><a class="nav-link-mb" href="destinos.html#internacionales">Destinos Internacionales</a></li>
                 <li><a class="nav-link-mb" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
                 <li><a class="nav-link-mb" href="contacto.html">Contacto</a></li>
                 <li><a class="nav-link-mb" href="promos.html">Promociones</a></li>
@@ -69,34 +69,34 @@
 
             <div class="col-sm-12 col-md-6" id="form">
 
-                <h2 class="title-section2">Dejanos tus Datos</h2>
+                <h2 class="title-section">Dejanos tus Datos</h2>
 
-                <form class="formulario flex-center" action="https://formspree.io/f/xrgwwogd" method="POST">
+                <form class="formulario flex-center" action="GET">
 
                     <div>
                         <label for="nombre">Nombre</label><br>
                         <input class="ipt" type="text" placeholder="Ej Carlos" id="nombre" name="nombre"
                             title="El nombre solo aceptas letras y espacios en blanco"
-                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                     </div>
 
                     <div>
                         <label for="apellido">Apellido</label><br>
                         <input class="ipt" type="text" placeholder="Ej Rodriguez" id="apellido" name="apellido"
-                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" >
+                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                     </div>
 
                     <div>
                         <label for=" email">Email</label><br>
                         <input class="ipt" type="email" placeholder="dominio@mail.com" id="email" name="email"
-                            pattern="^.[a-z0-9]+(\.[_a-z0-100]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                            pattern="^.[a-z0-9]+(\.[_a-z0-100]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
 
                     </div>
 
                     <div>
                         <label for="tel">Tel</label><br>
                         <input class="ipt" type="tel" placeholder="Ej 123-456-7890" id="tel" name="tel"
-                            pattern="^\d{1,10}$">
+                            pattern="^\d{1,10}$" required>
                     </div>
 
                     <textarea class="" name="" id="" cols="25" rows="3" placeholder="Escriba Aquí"></textarea>
@@ -120,7 +120,7 @@
 
             <div class=" col-sm-12 col-md-6" id="sucursales">
 
-                <h2 class="title-section2">Sucursales</h2>
+                <h2 class="title-section">Sucursales</h2>
 
                 <iframe class="mapa ratio ratio-1x1"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13136.716086383629!2d-58.379871441587845!3d-34.59963435537007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1713330518955!5m2!1ses-419!2sar"
