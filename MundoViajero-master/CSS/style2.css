@@ -10,7 +10,7 @@
     --second-color: rgb(4, 21, 97);
     --second-color-alpha: rgba(4, 21, 97, 0.769);
     --third-color: rgb(255, 126, 212);
-    --forth-color: rgb(103, 125, 224);
+    --forth-color: rgb(148, 165, 240);
     --fifth-color: rgb(159, 226, 159);
     --bg-color-primary: rgb(4, 21, 97);
     --bg-color-primary-alpha: rgba(4, 21, 97, 0.474);
@@ -62,14 +62,12 @@ section {
 }
 
 /**my styles**/
-/*
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10px;
-    width: auto;
-}*/
+}
+
 .flex-center2 {
     display: flex;
     justify-content: center;
@@ -78,6 +76,7 @@ section {
     height: 10px;
     width: auto;
 }
+
 .no-scroll {
     overflow: hidden;
 }
@@ -222,10 +221,9 @@ header i {
 
 /*!disable*/
 
-.navbar-desktop {
-   
-    margin-right: 10rem;
-    margin-top: .7rem;
+header .navbar-desktop * {
+    display: none;
+    visibility: hidden;
 }
 
 /**Menu mobile*/
@@ -314,7 +312,7 @@ header i {
 }
 
 .principal {
-    height: 300px;
+    /* height: 10px;*/
     width: auto;
     display: flex;
     justify-content: center;
@@ -327,7 +325,7 @@ header i {
     height: 50vh;
     width: auto;
     margin: auto;
-    
+
 }
 
 /**busqueda*/
@@ -617,6 +615,18 @@ footer .down {
     text-shadow: var(--text-shadow-header);
     font-weight: bold;
     font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.title-section2 {
+    color: rgb(4, 21, 97);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 
 .accordion {
