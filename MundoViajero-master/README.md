@@ -1,6 +1,6 @@
 # Proyecto de página multipage Codo a Codo 4.0
 
-![HTML5 CSS3 JavaScript](/assets/images-README/Trinidad.png)
+![HTML5 CSS3 JavaScript](./assets/images-README/Trinidad.png)
 
 
 
