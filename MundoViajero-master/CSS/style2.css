@@ -13,7 +13,7 @@
     --forth-color: rgb(148, 165, 240);
     --fifth-color: rgb(159, 226, 159);
     --bg-color-primary: rgb(4, 21, 97);
-    --bg-color-primary-alpha: rgba(4, 21, 97, 0.919);
+    --bg-color-primary-alpha: rgba(4, 21, 97, 0.474);
     --black-color: rgb(30, 30, 30);
     --white-color: rgb(255, 255, 255);
     --color-links: #d8d8d8;
@@ -50,6 +50,16 @@ body {
     background: url('../assets/background-images/bg_alt7.jpg') center/cover no-repeat fixed;
 }
 
+/*MAin*/
+main {
+    margin-top: 7.5rem;
+    flex-grow: 1;
+}
+
+section {
+    scroll-margin-top: 8.5rem;
+
+}
 
 /**my styles**/
 .flex-center {
@@ -184,6 +194,11 @@ header {
     right: 0;
     left: 0;
     z-index: 999;
+    background: var(--bg-color-primary-alpha);
+}
+
+header.scroll-header {
+    padding: 4rem 0;
     background: var(--bg-color-primary);
 }
 
@@ -299,8 +314,9 @@ header .navbar-desktop * {
 
 /**Foto inicio**/
 .container-search {
-    margin-top: 5px;
-    height: 1px;
+    margin-top: 10rem;
+    height: 20vh;
+    width: auto;
     flex-direction: column;
     gap: 2rem;
     flex-wrap: wrap;
@@ -311,8 +327,8 @@ header .navbar-desktop * {
 }
 
 .container-search h2 {
-    color: var(--black-color);
-    text-shadow: 1px 1px 4px var(--color-links);
+    color: var(--white-color);
+    text-shadow: var(--text-shadow-header);
     font-size: 2.2rem;
     font-weight: bolder;
 }
@@ -379,19 +395,6 @@ header .navbar-desktop * {
 .container-search .btn-search:hover i {
     color: var(--forth-color);
 }
-
-
-/*MAin*/
-main {
-    margin-top: 1rem;
-    flex-grow: 1;
-}
-
-section {
-    scroll-margin-top: 8.5rem;
-
-}
-
 
 #nacionales,
 #internacionales {
@@ -618,7 +621,7 @@ footer .down {
     color: var(--white-color);
     font-size: 3rem;
     text-align: center;
-    /*text-shadow: 1px 1px 3px #eef;*/
+    text-shadow: var(--text-shadow-header);
     font-weight: bold;
     font-style: italic;
     margin-top: 50px;
@@ -797,20 +800,20 @@ input[type="submit"]:hover {
     }
 
     header {
-        justify-content: flex-start;
+        justify-content: space-between;
         transition: all .5s ease;
 
     }
 
     header.scroll-header {
         padding: 4rem 0;
-        background: var(--bg-color-primary-alpha);
+        background: var(--bg-color-primary);
     }
 
     /**Navbar desktop**/
 
     .navbar-desktop {
-        margin-left: 1rem;
+        margin-right: 10rem;
         margin-top: .7rem;
         /* flex-shrink: 1; */
     }
