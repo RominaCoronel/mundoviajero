@@ -10,7 +10,7 @@
     --second-color: rgb(4, 21 97);
     --second-color-alpha: rgba(4, 21, 97, 0.769);
     --third-color: rgb(255, 126, 212);
-    --forth-color: rgb(103, 125, 224);
+    --forth-color: rgb(148, 165, 240);
     --fifth-color: rgb(159, 226, 159);
     --bg-color-primary: rgb(4, 21, 97);
     --bg-color-primary-alpha: rgba(4, 21, 97, 0.919);
@@ -57,6 +57,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .flex-center2 {
     display: flex;
     justify-content: center;
@@ -65,6 +66,7 @@ body {
     height: 5px;
     width: auto;
 }
+
 .no-scroll {
     overflow: hidden;
 }
@@ -316,7 +318,7 @@ header .navbar-desktop * {
 }
 
 .principal {
-   /* height: 10px;*/
+    /* height: 10px;*/
     width: auto;
     display: flex;
     justify-content: center;
@@ -329,7 +331,7 @@ header .navbar-desktop * {
     height: 50vh;
     width: auto;
     margin: auto;
-    
+
 }
 
 /**busqueda*/
@@ -622,6 +624,7 @@ footer .down {
     margin-top: 50px;
     margin-bottom: 15px;
 }
+
 .title-section2 {
     color: rgb(4, 21, 97);
     font-size: 3rem;
@@ -631,6 +634,7 @@ footer .down {
     margin-top: 50px;
     margin-bottom: 15px;
 }
+
 .accordion {
     margin: 4rem 0;
 }
