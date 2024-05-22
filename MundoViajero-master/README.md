@@ -1,6 +1,6 @@
 # Proyecto de página multipage Codo a Codo 4.0
 
-![HTML5 CSS3 JavaScript](./assets/images-README/Trinidad.png)
+![HTML5 CSS3 JavaScript](/assets/images-README/Trinidad.png)
 
 
 
@@ -16,6 +16,5 @@ Este proyecto es sobre una página de turismo donde incorporo Bootstrap.
 * Footer
 * Preguntas Frecuentes
 * Formulario de Contacto
-* Se agregó animación a las promos con un Intersection Observer.
-
+*  Se agregó animación a las promos con un Intersection Observer.
 
